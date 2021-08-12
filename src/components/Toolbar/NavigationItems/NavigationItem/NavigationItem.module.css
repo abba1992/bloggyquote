@@ -1,0 +1,11 @@
+.Links {
+    display: flex;
+    padding: 5px 5px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #45a29e;
+}

@@ -1,0 +1,8 @@
+.NavigationItems {
+  display: flex;
+  margin: auto 15px;
+}
+
+.NavigationItems .Left {
+  flex-grow: 1;
+}
