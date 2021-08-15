@@ -1,9 +1,20 @@
 .Para {
-    color: #c5c6c7;
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    margin-top: 0;
-    font-size: 1.3rem;
-    font-family: Nunito;
+  color: #c5c6c7;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.3rem;
+  animation: fromLeft 2.5s ease-out 1;
+}
+
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }

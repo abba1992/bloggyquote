@@ -11,10 +11,21 @@
   font-size: 6.5rem;
   align-self: center;
   margin-top: 10px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
+  animation: fromRight 2s;
 }
 
 .toCenter {
-    align-self: center;
-    margin-bottom: 10px;
+  align-self: center;
+  margin-bottom: 10px;
+}
+@keyframes fromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(85px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }

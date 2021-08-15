@@ -1,0 +1,10 @@
+.Footer {
+  display: flex;
+  background-color: #1f2833;
+  justify-content: space-evenly;
+}
+
+.Footer img {
+  width: 75px;
+  color: #66fcf1;
+}

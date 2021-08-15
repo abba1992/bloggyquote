@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Body from './components/Body/Body';
+import Footer from './components/Footer/Footer';
 import Intro from './components/Intro/Intro';
 import Toolbar from './components/Toolbar/Toolbar';
 class App extends Component {
@@ -10,7 +11,7 @@ class App extends Component {
         <Toolbar />
         <Intro />
         <Body />
-        <h3>footer</h3>
+        <Footer />
 
       </div>
     );
