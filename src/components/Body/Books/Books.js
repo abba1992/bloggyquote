@@ -8,9 +8,9 @@ class Books extends Component {
             { id: 1, author: 'Robert Greene', title: 'Mastery' },
             { id: 2, author: 'Brian Tracy', title: 'Eat that frog' },
             { id: 3, author: 'Angela Duckworth', title: 'Grit' },
-            { id: 3, author: 'Angela Duckworth', title: 'Grit' },
-            { id: 3, author: 'Angela Duckworth', title: 'Grit' },
-            { id: 3, author: 'Angela Duckworth', title: 'Grit' },
+            { id: 4, author: 'Angela Duckworth', title: 'Grit' },
+            { id: 5, author: 'Angela Duckworth', title: 'Grit' },
+            { id: 6, author: 'Angela Duckworth', title: 'Grit' },
         ]
     }
     render() {
