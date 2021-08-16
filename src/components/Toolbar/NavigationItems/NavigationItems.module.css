@@ -1,6 +1,7 @@
 .NavigationItems {
   display: flex;
-  margin: auto 15px;
+  margin: 15px auto;
+  width: 85%;
 }
 
 .NavigationItems .Left {

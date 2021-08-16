@@ -3,5 +3,6 @@
   width: 50vw;
   justify-content: space-around;
   flex-flow: wrap;
+  width: 85%;
   margin: 35px auto;
 }

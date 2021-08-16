@@ -11,6 +11,10 @@ class Books extends Component {
             { id: 4, author: 'Angela Duckworth', title: 'Grit' },
             { id: 5, author: 'Angela Duckworth', title: 'Grit' },
             { id: 6, author: 'Angela Duckworth', title: 'Grit' },
+            { id: 7, author: 'Angela Duckworth', title: 'Grit' },
+            { id: 8, author: 'Angela Duckworth', title: 'Grit' },
+            { id: 9, author: 'Angela Duckworth', title: 'Grit' },
+            { id: 10, author: 'Angela Duckworth', title: 'Grit' },
         ]
     }
     render() {
