@@ -1,13 +1,15 @@
 .Para {
   color: #c5c6c7;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  margin-top: 0;
-  font-size: 1.3rem;
-  animation: fromLeft 2.5s ease-out 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  animation: fromLeft 2s;
 }
-
+p {
+  text-align: justify;
+  width: 70%;
+}
 @keyframes fromLeft {
   0% {
     opacity: 0;

@@ -8,9 +8,7 @@ const Intro = () => {
         <div className={classes.Intro}>
             <h1>Books</h1>
             <Para />
-            <div className={classes.toCenter}>
-                <BookButton />
-            </div>
+            <BookButton />
         </div>
     )
 }

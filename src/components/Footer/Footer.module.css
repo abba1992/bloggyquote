@@ -2,9 +2,20 @@
   display: flex;
   background-color: #1f2833;
   justify-content: space-evenly;
+  align-items: center;
+  height: 25vh;
 }
 
 .Footer img {
   width: 75px;
   color: #66fcf1;
+  background-color: #fff;
+}
+a {
+  display: block;
+}
+p {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
 }
