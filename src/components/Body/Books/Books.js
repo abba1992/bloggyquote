@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import Aux from '../../../hoc/Auxiliary';
 import Book from './Book/Book';
+import Modal from '../../Modal/Modal';
 import classes from './Books.module.css';
+import Summary from '../../Modal/Summary/Summary';
 
 class Books extends Component {
     state = {
@@ -15,14 +18,41 @@ class Books extends Component {
             { id: 8, author: 'Angela Duckworth', title: 'Grit' },
             { id: 9, author: 'Angela Duckworth', title: 'Grit' },
             { id: 10, author: 'Angela Duckworth', title: 'Grit' },
-        ]
+        ],
+        showModal: false
+    }
+    bookSummaryHandler = (id) => {
+        const bookId = this.state.booksData.find(book => {
+            return book.id === id + 1
+        })
+        return bookId.title
+    }
+    modalHandler = () => {
+        this.setState({
+            showModal: true
+        })
+    }
+    modalCloseHandler = () => {
+        this.setState({
+            showModal: false
+        })
     }
     render() {
-        const books = this.state.booksData.map((book) => <Book key={book.id} {...book} />)
+        const books = this.state.booksData.map((book, index) => <Book
+            key={book.id}
+            {...book}
+            status={() => this.bookSummaryHandler(index)}
+            show={this.modalHandler}
+        />)
         return (
-            <div className={classes.Books}>
-                {books}
-            </div>
+            <Aux>
+                <Modal modalShow={this.state.showModal} modalClose={this.modalCloseHandler}>
+                    <Summary summary={this.state.booksData} />
+                </Modal>
+                <div className={classes.Books}>
+                    {books}
+                </div>
+            </Aux>
         )
     }
 }
